@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Header = () => {
     return (
@@ -8,11 +8,11 @@ const Header = () => {
             <h2>NavBar</h2>
             <nav>
                 <span>My website</span>
-                <Link to="/">Home</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/posts">Posts</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/users">Users</NavLink>
+                <NavLink to="/posts">Posts</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </nav>
         </div>
     );
